@@ -3,6 +3,9 @@
 Ce guide explique comment récupérer, exécuter et compiler ce projet Android en utilisant Android Studio.
 
 
+
+
+
 ## Clonage du Répertoire
 
 1. Assurez-vous d'avoir [Git](https://git-scm.com/) installé sur votre système.
@@ -21,6 +24,9 @@ Ce guide explique comment récupérer, exécuter et compiler ce projet Android e
 ![image](https://github.com/j-mouellic/OpenClassRooms-P3-EntreVoisins/assets/115517052/51f35705-99a6-447a-9bd0-1d14558c9b17)
 
 
+
+
+
 ## Configuration d'Android Studio
 
 8. Ouvrez le projet dans Android Studio.
@@ -30,12 +36,18 @@ Ce guide explique comment récupérer, exécuter et compiler ce projet Android e
 10. Synchronisez le projet en cliquant sur "File" (Fichier) > "Sync Project with Gradle Files" (Synchroniser le projet avec les fichiers Gradle).
 
 
+
+
+
 ## Exécution du Projet
 
 11. Connectez un appareil Android à votre ordinateur ou utilisez un émulateur Android.
 
 12. Dans Android Studio, cliquez sur "Run" (Exécuter) pour exécuter l'application sur l'appareil ou l'émulateur.
 ![image](https://github.com/j-mouellic/OpenClassRooms-P3-EntreVoisins/assets/115517052/7208f1b4-0a6b-4269-86ae-8c2d2908c0a4)
+
+
+
 
 
 ## Compilation de l'APK
