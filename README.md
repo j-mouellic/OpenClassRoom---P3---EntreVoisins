@@ -12,7 +12,7 @@ Ce guide explique comment récupérer, exécuter et compiler ce projet Android e
 
 2. Ouvrez Android Studio sur votre machine.
 
-3. Sur GitHub, accédez au [répertoire du projet]([https://github.com/votre-utilisateur/votre-projet](https://github.com/j-mouellic/OpenClassRooms-P3-EntreVoisins.git)).
+3. Sur GitHub, accédez au [répertoire du projet] -> (https://github.com/j-mouellic/OpenClassRooms-P3-EntreVoisins.git).
 
 4. Cliquez sur le bouton "Code" et copiez l'URL du répertoire. Assurez-vous de sélectionner "HTTPS" si vous ne configurez pas SSH.
 ![image](https://github.com/j-mouellic/OpenClassRooms-P3-EntreVoisins/assets/115517052/6a13e38b-f980-4766-b26c-f75113b7bace)
