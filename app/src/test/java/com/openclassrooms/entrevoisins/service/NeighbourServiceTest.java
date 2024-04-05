@@ -12,8 +12,10 @@ import org.junit.runners.JUnit4;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Unit test on Neighbour service
@@ -40,5 +42,39 @@ public class NeighbourServiceTest {
         Neighbour neighbourToDelete = service.getNeighbours().get(0);
         service.deleteNeighbour(neighbourToDelete);
         assertFalse(service.getNeighbours().contains(neighbourToDelete));
+    }
+
+    @Test
+    public void enableFavoriteNeighbourWithSuccess(){
+        Neighbour favoriteNeighbour = service.getNeighbours().get(0);
+        favoriteNeighbour.setFavorite(true);
+        service.setFavoriteNeighbour(favoriteNeighbour);
+        Neighbour neighbourToVerify = service.getFavoriteNeighbours().get(0);
+        assertEquals(neighbourToVerify, favoriteNeighbour);
+        assertTrue(neighbourToVerify.isFavorite());
+    }
+
+    @Test
+    public void disableFavoriteNeighbourWithSuccess(){
+        Neighbour favoriteNeighbour = service.getNeighbours().get(0);
+        favoriteNeighbour.setFavorite(true);
+
+        service.setFavoriteNeighbour(favoriteNeighbour);
+        Neighbour neighbourToVerify = service.getFavoriteNeighbours().get(0);
+        assertEquals(neighbourToVerify, favoriteNeighbour);
+        assertTrue(neighbourToVerify.isFavorite());
+
+        neighbourToVerify.setFavorite(false);
+        service.setFavoriteNeighbour(favoriteNeighbour);
+        List<Neighbour> favoriteList = service.getFavoriteNeighbours();
+        assertTrue(favoriteList.isEmpty());
+    }
+
+    @Test
+    public void checkIfFavoriteNeighboursListIsNotEmptyAfterAddingOneFavorite(){
+        Neighbour favoriteNeighbour = service.getNeighbours().get(0);
+        favoriteNeighbour.setFavorite(true);
+        service.setFavoriteNeighbour(favoriteNeighbour);
+        assertTrue(service.getFavoriteNeighbours().contains(favoriteNeighbour));
     }
 }

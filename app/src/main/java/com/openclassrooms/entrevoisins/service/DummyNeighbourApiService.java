@@ -39,7 +39,7 @@ public class DummyNeighbourApiService implements  NeighbourApiService {
     }
 
     @Override
-    public void setFavroiteNeighbour(Neighbour neighbour) {
+    public void setFavoriteNeighbour(Neighbour neighbour) {
         neighbours.set(neighbours.indexOf(neighbour), neighbour);
     }
 
